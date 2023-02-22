@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伊勢カントリークラブ 会員専用 大会予約サイト</title>
+</head>
+<body>
+<div class="d-flex justify-content-center align-items-center flex-column">
+    <header id="header"></header>
+    <h1>LINE連携</h1>
+    <div class="w-85 m-auto">
+        <p>会員番号より会員情報を確認して、LINEと連携してください。</p>
+        <p>※一度、連携しておけば次回以降は連携の必要はありません。</p>
+        <ul class="list-group">
+            <li id="inputArea">
+                <label for="memberID" class="form-label">会員番号</label>
+                <br>
+                <input id="memberID" type="text" class="form-control" placeholder="会員番号">
+                <p class="text-center"><span id="infoCheck" class="btn btn-success">会員情報を確認する</span></p>
+            </li>
+            <li id="checkArea" class="d-none">
+                <p>会員番号：<span id="span-memberID"></span></p>
+                <p>会員名：<span id="memberName"></span></p>
+                <p>以上の会員の方でお間違いありませんか？</p>
+                <p class="text-center"><span id="fix" class="btn btn-primary">会員番号を修正する</span></p>
+                <p><input id="check" type="checkbox" class="form-check"><label for="check">確認しました</label></p>
+                <p class="text-center"><span id="submit" class="btn btn-success">連携する</span></p>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

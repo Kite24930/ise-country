@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申し込み</title>
+</head>
+<body>
+<div class="d-flex justify-content-center align-items-center flex-column">
+    <header id="header"></header>
+    <h1><span id="competition"></span> 申し込み</h1>
+    <div class="w-85 m-auto">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <p class="form-text">選手名</p>
+                <p id="competitionPlayer"></p>
+            </li>
+            <li class="list-group-item">
+                <p class="form-text">競技名</p>
+                <p id="competitionName"></p>
+            </li>
+            <li class="list-group-item">
+                <p class="form-text">日時</p>
+                <p id="competitionDate"></p>
+            </li>
+            <li class="list-group-item">
+                <p class="form-text">会場</p>
+                <p id="competitionVenue"></p>
+            </li>
+            <li class="list-group-item">
+                <p class="form-text">参加料</p>
+                <p id="competitionPrice"></p>
+            </li>
+        </ul>
+        <div>
+            <input id="check" type="checkbox" class="form-check">
+            <label for="check">以上の競技内容を確認しました。</label>
+            <br>
+            <span id="apply" class="btn btn-success">申し込む</span>
+        </div>
+    </div>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
