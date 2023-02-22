@@ -1,0 +1,9 @@
+{
+  "name": "ise-country",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@line/create-liff-app": "^1.1.0"
+  }
+}
